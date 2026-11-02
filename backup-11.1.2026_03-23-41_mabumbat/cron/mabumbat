@@ -1,0 +1,4 @@
+MAILTO=""
+SHELL="/bin/bash"
+* * * * * sleep $((RANDOM \% 60)) && /usr/local/bin/php /home/mabumbat/public_html/backend/cron/send-emails.php >/dev/null 2>&1
+0 0 * * * sleep $((RANDOM \% 60)) &&   /usr/local/bin/php /home/mabumbat/public_html/backend/cron/check-deadlines.php >/dev/null 2>&1

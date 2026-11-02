@@ -1,0 +1,42 @@
+; cPanel first:138.0.19 (update_time):1793483480 Cpanel::ZoneFile::VERSION:1.3 hostname:brandy.hostns.io latest:138.0.19
+; Zone file for mabumbatech.co.tz
+$TTL 14400
+mabumbatech.co.tz.	86400	IN	SOA	ns1.rodlinehost.com.	info.rodlinesms.co.tz.	(
+						2026103109 ;Serial Number
+						3600 ;refresh
+						7200 ;retry
+						1209600 ;expire
+						86400	)
+mabumbatech.co.tz.	86400	IN	NS	ns1.rodlinehost.com.
+mabumbatech.co.tz.	86400	IN	NS	ns2.rodlinehost.com.
+mabumbatech.co.tz.	14400	IN	A	91.204.209.30
+mabumbatech.co.tz.	14400	IN	MX	10	entrap-01.hostns.io.
+mabumbatech.co.tz.	14400	IN	MX	10	entrap-02.hostns.io.
+mabumbatech.co.tz.	14400	IN	MX	10	entrap-03.hostns.io.
+mail	14400	IN	CNAME	mabumbatech.co.tz.
+www	14400	IN	CNAME	mabumbatech.co.tz.
+ftp	14400	IN	A	91.204.209.30
+ns1	14400	IN	A	109.70.148.2
+ns2	14400	IN	A	109.70.148.3
+mabumbatech.co.tz.	14400	IN	TXT	"v=spf1 ip4:91.204.209.30 include:spf.hostns.io +a +mx -all"
+whm	14400	IN	A	91.204.209.30
+_carddavs._tcp	14400	IN	SRV	0	0	2080	mabumbatech.co.tz.
+_carddavs._tcp	14400	IN	TXT	"path=/"
+webmail	14400	IN	A	91.204.209.30
+_carddav._tcp	14400	IN	SRV	0	0	2079	mabumbatech.co.tz.
+_carddav._tcp	14400	IN	TXT	"path=/"
+cpcalendars	14400	IN	A	91.204.209.30
+autodiscover	14400	IN	A	91.204.209.30
+_autodiscover._tcp	14400	IN	SRV	0	0	443	cpanelemaildiscovery.cpanel.net.
+cpcontacts	14400	IN	A	91.204.209.30
+_caldav._tcp	14400	IN	SRV	0	0	2079	mabumbatech.co.tz.
+_caldav._tcp	14400	IN	TXT	"path=/"
+autoconfig	14400	IN	A	91.204.209.30
+_caldavs._tcp	14400	IN	SRV	0	0	2080	mabumbatech.co.tz.
+_caldavs._tcp	14400	IN	TXT	"path=/"
+webdisk	14400	IN	A	91.204.209.30
+cpanel	14400	IN	A	91.204.209.30
+_dmarc	14400	IN	TXT	"v=DMARC1\; p=none\;"
+default._domainkey	14400	IN	TXT	"v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkYialRwZfpoeINmgX/qFpuCEM8cFg/VDa47BBoDLpsdOe4NwcrjfqODU5Q2lwfpxOMn6W5Pkiro8jQuIvaGvtKhXvCII91xATYRQ4YJjt2OSF4ljN3lBNTgCgxQuzj5rO/fhXmvn2t4RNcZc7JMaYpkbQEwcD2MhnxCb29WSRYLbxlJEdM6/NoKjc8VMaW8DW" "jNato/deelzrT6YHD0yWTHAOfChGgUBLUteHJnP4zxgB0hrMUN/G013fLRljOrrj34vfDa76bA9WtjlA8uzq6w6CzctSoWBWWGxYfJYJ34vl9Zs6AjFOXG4qxHlP75uT8zlon5MV1Tdy6sm57P/dQIDAQAB\;"
+_cpanel-dcv-test-record	14400	IN	TXT	"_cpanel-dcv-test-record=IJvmEFrxyfVBkmlZxSVbHEEYxLwi_rxk5zmvEef1kjyPaMB4hLSbLaeF39SS8igv"
+_acme-challenge	14400	IN	TXT	"F9Uf8YZe5UBFu7oFKF0u0hS1svPMhN1vlexXWkQuLx0"

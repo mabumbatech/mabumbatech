@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Set New Password — MABUMBA TECH</title>
-<link rel="icon" href="../../img/favicon.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="../../css/style.css">
-<link rel="stylesheet" href="../../css/forms.css">
-<link rel="stylesheet" href="../../css/auth.css">
-</head>
-<body class="auth-body">
-<div class="auth-wrap">
-  <div class="auth-card">
-    <div class="auth-brand">
-      <img src="../../img/logo.png" alt="logo">
-      <h1>MABUMBA TECH</h1>
-      <p>Account Reset Required</p>
-    </div>
-    <div class="alert alert-info"><i class="bi bi-shield-lock"></i> Your administrator reset your access. Enter the one-digit code they gave you, then set a new password.</div>
-    <div id="flashContainer"></div>
 
-    <form id="resetForm" class="form">
-      <div class="form-group">
-        <label>One-Digit Code From Admin (1–9)</label>
-        <input type="text" name="temp_code" maxlength="1" pattern="[1-9]" required style="text-align:center;font-size:1.2rem;font-weight:700;letter-spacing:.2em;">
-      </div>
-      <div class="form-group"><label>New Password</label><input type="password" name="new_password" required minlength="6"></div>
-      <div class="form-group"><label>Confirm New Password</label><input type="password" name="confirm_password" required minlength="6"></div>
-      <button type="submit" class="btn btn-primary btn-block"><i class="bi bi-check2-circle"></i> Set New Password</button>
-    </form>
-    <p class="auth-foot"><a href="#" id="logoutLink">Logout</a></p>
-  </div>
-</div>
-<script src="../../js/config.js"></script>
-<script src="../../js/pages/auth-force-reset.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set New Password — MABUMBA TECH</title>
+    <link rel="icon" href="../../img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/style.css?v2">
+    <link rel="stylesheet" href="../../css/forms.css?v2">
+    <link rel="stylesheet" href="../../css/auth.css?v2">
+    <link rel="stylesheet" href="../../css/login.css?v3">
+</head>
+
+<body class="login-page">
+    <main class="lg-stage">
+
+        <!-- Animated anime-style scene (decorative, drawn by js/login-scene.js) -->
+        <canvas id="lgScene" class="lg-scene" aria-hidden="true"></canvas>
+        <div class="lg-vignette" aria-hidden="true"></div>
+        <div class="lg-leak" aria-hidden="true"></div>
+
+        <div class="lg-caption" aria-hidden="true">
+            <span class="lg-cap-kicker">MABUMBA TECH</span>
+            <p class="lg-cap-words"><span>Technology.</span><span>Innovation.</span><span>Solution.</span></p>
+        </div>
+
+        <div class="lg-wrap">
+            <div class="lg-card">
+
+                <img class="lg-logo" src="../../img/logo.png" alt="MABUMBA TECH">
+
+                <div class="lg-head">
+                    <span class="lg-secure"><i class="bi bi-shield-lock-fill"></i> Account reset required</span>
+                    <h1>Set a new <em>password</em></h1>
+                    <p>Your administrator reset your access. Enter the one-digit code they gave you, then set a new password.</p>
+                </div>
+
+                <div id="flashContainer"></div>
+
+                <form id="resetForm" class="form">
+                    <div class="form-group">
+                        <label>One-Digit Code From Admin (1–9)</label>
+                        <div class="lg-field">
+                            <i class="bi bi-123 lg-ic"></i>
+                            <input type="text" name="temp_code" maxlength="1" pattern="[1-9]" required style="text-align:center;font-size:1.2rem;font-weight:700;letter-spacing:.2em;padding-left:14px;padding-right:14px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <div class="lg-field">
+                            <i class="bi bi-lock lg-ic"></i>
+                            <input type="password" name="new_password" placeholder="At least 6 characters" required minlength="6">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm New Password</label>
+                        <div class="lg-field">
+                            <i class="bi bi-lock-fill lg-ic"></i>
+                            <input type="password" name="confirm_password" placeholder="Repeat the new password" required minlength="6">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="bi bi-check2-circle"></i> <span>Set New Password</span></button>
+                </form>
+
+                <p class="auth-foot"><a href="#" id="logoutLink">Logout</a></p>
+            </div>
+        </div>
+
+    </main>
+    <script src="../../js/config.js"></script>
+    <script src="../../js/pages/auth-force-reset.js"></script>
+    <script src="../../js/login-scene.js?v1" defer></script>
 </body>
+
 </html>

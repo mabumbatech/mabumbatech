@@ -1,0 +1,1 @@
+CREATE USER "mabumbat" WITH PASSWORD E'md504465b8e889ad27e2180e2b8f2dce1df';

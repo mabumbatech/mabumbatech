@@ -1,0 +1,18 @@
+---
+documentroot: /home/mabumbat/public_html
+group: mabumbat
+hascgi: '1'
+homedir: /home/mabumbat
+ip: 91.204.209.30
+ipv6: ~
+owner: rodline1
+phpopenbasedirprotect: ~
+port: '443'
+secruleengineoff: ~
+serveradmin: webmaster@mabumbatech.co.tz
+serveralias: www.mabumbatech.co.tz mail.mabumbatech.co.tz
+servername: mabumbatech.co.tz
+ssl: '1'
+usecanonicalname: 'Off'
+user: mabumbat
+userdirprotect: ''

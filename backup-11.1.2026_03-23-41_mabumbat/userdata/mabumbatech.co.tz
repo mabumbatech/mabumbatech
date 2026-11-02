@@ -1,0 +1,25 @@
+---
+customlog:
+  -
+    format: combined
+    target: /etc/apache2/logs/domlogs/mabumbatech.co.tz
+  -
+    format: "\"%{%s}t %I .\\n%{%s}t %O .\""
+    target: /etc/apache2/logs/domlogs/mabumbatech.co.tz-bytes_log
+documentroot: /home/mabumbat/public_html
+group: mabumbat
+hascgi: 1
+homedir: /home/mabumbat
+ip: 91.204.209.30
+owner: rodline1
+phpopenbasedirprotect: 1
+port: '80'
+scriptalias:
+  -
+    path: /home/mabumbat/public_html/cgi-bin
+    url: /cgi-bin/
+serveradmin: webmaster@mabumbatech.co.tz
+serveralias: www.mabumbatech.co.tz mail.mabumbatech.co.tz
+servername: mabumbatech.co.tz
+usecanonicalname: 'Off'
+user: mabumbat
