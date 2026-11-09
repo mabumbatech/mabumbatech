@@ -563,6 +563,7 @@
     padding: 6px 14px;
     letter-spacing: .12em;
 }
+.inner .section-head:first-child h1,
 .inner .section-head:first-child h2 {
     color: #fff;
     font-family: 'Sora', var(--font-sans);

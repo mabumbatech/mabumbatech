@@ -315,8 +315,10 @@
 .about-page #siteHeader + .section > .container > .section-head:first-child.reveal { opacity: 1; transform: none; transition: none; }
 .about-page #siteHeader + .section > .container > .section-head:first-child > * { animation: abRise .8s cubic-bezier(.2, .7, .2, 1) both; }
 .about-page #siteHeader + .section > .container > .section-head:first-child > .tag { animation-delay: .08s; }
+.about-page #siteHeader + .section > .container > .section-head:first-child > h1,
 .about-page #siteHeader + .section > .container > .section-head:first-child > h2 { animation-delay: .22s; }
 .about-page #siteHeader + .section > .container > .section-head:first-child > p { animation-delay: .42s; }
+.about-page .section-head:first-child h1::after,
 .about-page .section-head:first-child h2::after {
     content: '';
     display: block;
@@ -524,7 +526,8 @@
     .about-page #siteHeader + .section > .container > .section-head:first-child::after,
     .ab-motto-panel::before, .ab-motto-panel::after, .ab-motto-ic, .ab-motto-word h3 i,
     .ab-mission::after, .ab-vision::after, .ab-stats::before, .ab-who-ic::after { animation: none !important; }
-    .about-page .section-head:first-child h2::after { animation: none; width: 76px; }
+    .about-page .section-head:first-child h1::after,
+.about-page .section-head:first-child h2::after { animation: none; width: 76px; }
     .ab-rv, .ab-steps-anim .ab-step, .ab-steps-anim .ab-step .ab-step-num { opacity: 1; transform: none; transition: none; }
     .ab-steps::after { transform: none; }
     .ab-mv-card:hover, .ab-motto-word:hover, .ab-cta .btn:hover { transform: none; }

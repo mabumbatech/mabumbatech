@@ -9,9 +9,13 @@
 .pm-page #siteHeader + .section > .container > .section-head:first-child.reveal { opacity: 1; transform: none; transition: none; }
 .pm-page #siteHeader + .section > .container > .section-head:first-child > * { animation: pmRise .8s cubic-bezier(.2, .7, .2, 1) both; }
 .pm-page #siteHeader + .section > .container > .section-head:first-child > .tag { animation-delay: .08s; }
+.pm-page #siteHeader + .section > .container > .section-head:first-child > h1,
+.pm-page #siteHeader + .section > .container > .section-head:first-child > h1,
 .pm-page #siteHeader + .section > .container > .section-head:first-child > h2 { animation-delay: .22s; }
 .pm-page #siteHeader + .section > .container > .section-head:first-child > p { animation-delay: .42s; }
 .pm-page #siteHeader + .section > .container > .section-head:first-child > .rs-chips { animation-delay: .6s; }
+.pm-page .section-head:first-child h1::after,
+.pm-page .section-head:first-child h1::after,
 .pm-page .section-head:first-child h2::after {
     content: '';
     display: block;
@@ -184,7 +188,9 @@
     .pm-page .team-avatar::after, .pm-page .tr-search-ic, .pm-page .tr-search::after,
     .pm-page .ct-info::after, .pm-page .ct-wa, .pm-page .ct-form .btn-block::after,
     .pm-page .rs-submit::after, .pm-page .rs-drop-ic, .pm-page .rs-success, .pm-page .rs-success-ic { animation: none !important; }
-    .pm-page .section-head:first-child h2::after { animation: none; width: 76px; }
+    .pm-page .section-head:first-child h1::after,
+.pm-page .section-head:first-child h1::after,
+.pm-page .section-head:first-child h2::after { animation: none; width: 76px; }
     .pm-rv { opacity: 1; transform: none; transition: none; }
     .pm-page .team-card:hover, .pm-page .tr-card:hover, .pm-page .rs-panel:hover { transform: none; }
 }

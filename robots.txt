@@ -1,0 +1,27 @@
+# MABUMBA TECH - robots.txt
+User-agent: *
+Allow: /
+
+# Private areas (staff/admin tools, uploads, source and backups)
+Disallow: /frontend/html/admin/
+Disallow: /frontend/html/staff/
+Disallow: /frontend/html/company/
+Disallow: /frontend/html/install.html
+Disallow: /frontend/html/notifications.html
+Disallow: /install.php
+Disallow: /backend/api/admin/
+Disallow: /backend/api/staff/
+Disallow: /backend/api/company/
+Disallow: /backend/api/customer/
+Disallow: /backend/cron/
+Disallow: /backend/includes/
+Disallow: /backend/uploads/requests/
+Disallow: /backend/uploads/legal/
+Disallow: /database/
+Disallow: /backup-
+
+# NOTE: /backend/api/public/, /backend/api/auth/me.php and the portfolio/avatars uploads stay crawlable on purpose:
+# the Services, Portfolio and Home pages load their content from them, and Google needs
+# them to see the full page.
+
+Sitemap: https://www.mabumbatech.co.tz/sitemap.xml

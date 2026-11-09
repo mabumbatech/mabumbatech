@@ -26,8 +26,8 @@ function renderPublicHeader(activeKey) {
   <header class="topbar topbar-home">
     <div class="topbar-inner">
       <a href="${pageUrl('/home.html')}" class="brand brand-home">
-        <img src="${APP_ROOT}/frontend/img/logo4.png" alt="MABUMBA TECH">
-        <span class="brand-name">MABUMBA TECH</span>
+        <img src="${APP_ROOT}/frontend/img/logo4.png" alt="MABUMBATECH">
+        <span class="brand-name">MABUMBATECH</span>
       </a>
       <nav class="nav-links">${nav}</nav>
       <div class="nav-cta">
@@ -113,8 +113,8 @@ function renderPublicFooter() {
       <div class="footer-grid">
         <div>
           <div class="footer-brand">
-            <img src="${APP_ROOT}/frontend/img/logo.png" alt="logo">
-            <span>MABUMBA TECH</span>
+            <img src="${APP_ROOT}/frontend/img/logo.png" alt="MABUMBATECH logo" loading="lazy">
+            <span>MABUMBATECH</span>
           </div>
           <p>Technology. Innovation. Solution. To deliver quality and affordable technology solutions that turn ideas into practical results and help people, businesses, and organizations grow.</p>
           <div class="social-row" data-social-links style="display:none;"></div>
@@ -142,13 +142,13 @@ function renderPublicFooter() {
           <h4>Get in Touch</h4>
           <ul>
             <li><i class="bi bi-geo-alt"></i> Mbeya, Tanzania</li>
-            <li><i class="bi bi-envelope"></i> mabumbatech@gmail.com</li>
+            <li><i class="bi bi-envelope"></i> info@mabumbatech.co.tz</li>
             <li><i class="bi bi-telephone"></i> +255 620 839 640 / +255 760 620 418</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; ${new Date().getFullYear()} MABUMBA TECH. All rights reserved.</span>
+        <span>&copy; ${new Date().getFullYear()} MABUMBATECH. All rights reserved.</span>
         <span>Technology. Innovation. Solution.</span>
       </div>
     </div>
@@ -188,7 +188,7 @@ async function loadSocialLinks(root) {
       a.target = '_blank';
       a.rel = 'noopener noreferrer nofollow';
       a.title = String(l.label || '');
-      a.setAttribute('aria-label', 'MABUMBA TECH on ' + String(l.label || 'social media'));
+      a.setAttribute('aria-label', 'MABUMBATECH on ' + String(l.label || 'social media'));
       const i = document.createElement('i');
       i.className = 'bi ' + icon;
       a.appendChild(i);
